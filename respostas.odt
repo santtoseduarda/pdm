@@ -1,0 +1,7 @@
+Resposta 1: Um ViewGroup é uma classe base no Android que serve como um container para outras views, organizando e gerenciando seu layout.
+
+Resposta 2: As constantes match_parent (agora chamada de fill_parent) fazem com que a view ocupe todo o espaço disponível do pai, enquanto wrap_content ajusta a view para ocupar apenas o espaço necessário para seu conteúdo.
+
+Resposta 3: O LinearLayout organiza seus elementos filhos em uma única linha, seja vertical ou horizontal. Se a orientação for vertical, os filhos são empilhados um em cima do outro; se for horizontal, são alinhados lado a lado.
+
+Resposta 4: As principais propriedades do LinearLayout incluem layout_weight e layout_gravity. Layout_weight distribui espaço extra entre os filhos proporcionalmente, enquanto layout_gravity alinha um filho em relação ao seu pai.
