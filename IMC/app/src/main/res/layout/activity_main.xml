@@ -1,0 +1,65 @@
+<!-- activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#009688"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#83C1BB">
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="198dp"
+            android:layout_height="66dp"
+            android:backgroundTint="#1A92C8"
+            android:text="Calcular seu IMC"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95" />
+
+        <EditText
+            android:id="@+id/heightEditText"
+            android:layout_width="282dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#01786D"
+            android:hint="Informe sua Altura (m)"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toTopOf="@+id/calculateButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.90999997" />
+
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="282dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#01786D"
+            android:hint="Informe seu Peso (kg)"
+            android:inputType="numberDecimal"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toTopOf="@+id/heightEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="381dp"
+            android:layout_height="288dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/obesidade"
+            tools:layout_editor_absoluteX="1dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
